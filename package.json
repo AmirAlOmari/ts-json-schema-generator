@@ -49,8 +49,7 @@
     "glob": "^8.0.1",
     "json5": "^2.2.0",
     "normalize-path": "^3.0.0",
-    "safe-stable-stringify": "^2.3.1",
-    "typescript": "~4.7.2"
+    "safe-stable-stringify": "^2.3.1"
   },
   "devDependencies": {
     "@auto-it/conventional-commits": "^10.32.5",
@@ -76,6 +75,7 @@
     "jest-junit": "^14.0.0",
     "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
+    "typescript": "~4.7.2",
     "vega": "^5.21.0",
     "vega-lite": "^5.2.0"
   },
@@ -92,5 +92,8 @@
     "debug": "node -r ts-node/register --inspect-brk ts-json-schema-generator.ts",
     "run": "ts-node-transpile-only ts-json-schema-generator.ts",
     "release": "yarn build && auto shipit"
+  },
+  "peerDependencies": {
+    "typescript": "4"
   }
 }
